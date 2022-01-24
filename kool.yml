@@ -1,0 +1,24 @@
+scripts:
+  composer: kool exec app composer
+  artisan: kool exec app php artisan
+  phpunit: kool exec app php ./bin/phpunit
+
+  setup:
+    - cp .env.example .env
+    - kool start
+    - kool run composer install
+    - kool run artisan key:generate
+    - kool run node-setup
+
+  reset:
+    - kool run composer install
+    - kool run artisan migrate:fresh --seed
+    - kool run node-setup
+  # CLI access to MySQL
+  mysql: kool exec -e MYSQL_PWD=$DB_PASSWORD database mysql -u $DB_USERNAME $DB_DATABASE
+  # npm - helpers for JS handling
+  npm: kool docker kooldev/node:16 npm
+  npx: kool docker kooldev/node:16 npx
+  node-setup:
+    - kool run npm install
+    - kool run npm run dev
