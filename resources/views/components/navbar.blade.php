@@ -1,7 +1,14 @@
 <div>
     <nav class="flex justify-around">
-        <span> item </span>
-        <span> item </span>
-        <span> item </span>
+        <div id="logo">
+            <svg>
+                <!-- logo -->
+            </svg>
+        </div>
+        <div>
+            <span> item </span>
+            <span> item </span>
+            <span> item </span>
+        </div>
     </nav>
 </div>
