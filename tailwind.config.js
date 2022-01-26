@@ -7,9 +7,15 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-            wsblue:"#231F54",
-            wsorange:"#FCB432",
-            wswhite:"#FFFFFF",
+            wsblue:{
+                100:"#231F54"
+            },
+            wsorange:{
+                100:"#FCB432"
+            },
+            wswhite:{
+                100:"#FFFFFF"
+            },
         },
     },
   },
