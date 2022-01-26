@@ -1,11 +1,9 @@
 <div>
-    <nav class="flex justify-around">
-        <div id="logo">
-            <svg>
-                <!-- logo -->
-            </svg>
-        </div>
+    <nav class="flex items-center">
         <div>
+            <!-- logo -->
+        </div>
+        <div class="flex justify-around">
             <span> item </span>
             <span> item </span>
             <span> item </span>
