@@ -1,5 +1,5 @@
 <div>
-    <nav class="flex items-center">
+    <nav class="flex items-center text-white bg-wsblue-100">
         <div>
             <!-- logo -->
         </div>
