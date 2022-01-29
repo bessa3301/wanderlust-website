@@ -16,7 +16,7 @@ use Filament\Tables\Columns\TextColumn;
 class WebsitePageResource extends Resource
 {
     protected static ?string $model = WebsitePage::class;
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
     protected static ?string $recordTitleAttribute = 'page';
 
 

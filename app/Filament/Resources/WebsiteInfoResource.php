@@ -21,7 +21,7 @@ use Filament\Tables\Columns\TextColumn;
 class WebsiteInfoResource extends Resource
 {
     protected static ?string $model = WebsiteInfo::class;
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-translate';
     protected static ?string $recordTitleAttribute = 'key';
 
     public static function form(Form $form): Form
