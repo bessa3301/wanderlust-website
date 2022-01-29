@@ -11,7 +11,7 @@ class CreateWebsitePagesTable extends Migration
         Schema::create('website_pages', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('home');
+            $table->string('page');
         });
     }
 

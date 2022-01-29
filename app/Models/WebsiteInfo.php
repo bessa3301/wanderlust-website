@@ -14,4 +14,9 @@ class WebsiteInfo extends Model
         'lang',
         'page_id',
     ];
+
+    public function page()
+    {
+        return $this->belongsTo(WebsitePage::class);
+    }
 }

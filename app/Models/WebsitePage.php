@@ -8,5 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class WebsitePage extends Model
 {
     use HasFactory;
-    protected $fillable = ['home'];
+    protected $fillable = ['page'];
+
+    public function informations()
+    {
+        return $this->hasMany(WebsiteInfo::class);
+    }
+
+    public function getNameAttribute()
+    {
+        return $this->page;
+    }
 }
