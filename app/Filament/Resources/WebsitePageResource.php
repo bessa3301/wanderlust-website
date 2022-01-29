@@ -17,14 +17,14 @@ class WebsitePageResource extends Resource
 {
     protected static ?string $model = WebsitePage::class;
     protected static ?string $navigationIcon = 'heroicon-o-collection';
-    protected static ?string $recordTitleAttribute = 'home';
+    protected static ?string $recordTitleAttribute = 'page';
 
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                TextInput::make('home')->label('Page Name')->required(),
+                TextInput::make('page')->label('Page Name')->required(),
             ]);
     }
 
@@ -32,7 +32,7 @@ class WebsitePageResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('home')->label('Page Name')
+                TextColumn::make('page')->label('Page Name')
             ]);
     }
 
