@@ -4,18 +4,15 @@ namespace App\Filament\Resources;
 
 use App\Enum\LangsEnum;
 use App\Filament\Resources\WebsiteInfoResource\Pages;
-use App\Filament\Resources\WebsiteInfoResource\RelationManagers;
 use App\Models\WebsiteInfo;
 use App\Models\WebsitePage;
-use Filament\Forms;
 use Filament\Forms\Components\BelongsToSelect;
-use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
-use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 
 class WebsiteInfoResource extends Resource
@@ -29,7 +26,7 @@ class WebsiteInfoResource extends Resource
         return $form
             ->schema([
                 TextInput::make('key')->required(),
-                RichEditor::make('value')->required(),
+                Textarea::make('value')->required(),
                 Select::make('lang')->options([
                     LangsEnum::BRAZILIAN_PORTUGUESE => 'Brazilian Portuguese',
                     LangsEnum::UNITED_STATES_ENGLISH => 'United States English',
