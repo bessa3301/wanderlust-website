@@ -45,15 +45,8 @@ class WebsiteInfoResource extends Resource
                 TextColumn::make('key'),
                 TextColumn::make('page_id')
                     ->label('page')
-                    ->formatStateUsing(fn (string $state): string => __(WebsitePage::find(intval($state))->name))
+                    ->formatStateUsing(fn (string $state): string => __(WebsitePage::find(intval($state))->page . " page"))
             ]);
-    }
-
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
     }
 
     public static function getPages(): array
