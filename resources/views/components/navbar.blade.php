@@ -1,17 +1,17 @@
-<div>
+<div x-data="{ nav: false }">
     <nav class="flex p-3 justify-between items-center text-white bg-wsblue-100">
         <div>
             <a href="/">Wanderlust</a>
         </div>
 
         <!-- hamburguer icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
+        <svg x-on:click="nav = !nav" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </nav>
     <!-- nav opts mobile -->
-    <div class="relative flex justify-end">
+    <div x-show="nav" class="relative flex justify-end">
         <ol class="fixed flex flex-col bg-wsblue-100 text-white py-2 w-full text-lg">
             <li class="p-2 border-b-2 border-white w-full flex justify-end">
                 about us
