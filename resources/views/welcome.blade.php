@@ -31,4 +31,36 @@
             </h2>
         </div>
     </div>
+
+    <!-- section - carrousel -->
+    <div class="bg-wsorange-100 text-white">
+        <h2>Processo de seleção</h2>
+
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div>
+                            <img src="https://via.placeholder.com/1080">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div>
+                            <img src="https://via.placeholder.com/1080">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div>
+                            <img src="https://via.placeholder.com/1080">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Splide('.splide').mount();
+    </script>
+
 </x-layout>
