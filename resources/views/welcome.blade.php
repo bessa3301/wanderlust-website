@@ -40,19 +40,13 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <div>
-                            <img src="https://via.placeholder.com/1080">
-                        </div>
+                        <x-carrousel-item-numbered number="01" message="recusandae ducimus asperiores dicta impedit" />
                     </li>
                     <li class="splide__slide">
-                        <div>
-                            <img src="https://via.placeholder.com/1080">
-                        </div>
+                        <x-carrousel-item-numbered number="02" message="Qui nobis harum quia dolorem" />
                     </li>
                     <li class="splide__slide">
-                        <div>
-                            <img src="https://via.placeholder.com/1080">
-                        </div>
+                        <x-carrousel-item-numbered number="03" message="elit. Odio cupiditate neque" />
                     </li>
                 </ul>
             </div>
@@ -60,7 +54,15 @@
     </div>
 
     <script>
-        new Splide('.splide').mount();
+        new Splide('.splide', {
+            rewind: true,
+            drag: true,
+            lazyLoad: 'nearby',
+            heightRatio: 1,
+            direction: 'ttb',
+            wheel: true,
+            releaseWheel: true,
+        }).mount();
     </script>
 
 </x-layout>
