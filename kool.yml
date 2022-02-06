@@ -20,6 +20,7 @@ scripts:
   npm: kool docker kooldev/node:16 npm
   npx: kool docker kooldev/node:16 npx
   watch: kool run npm run watch
+
   node-setup:
     - kool run npm install
     - kool run npm run dev
