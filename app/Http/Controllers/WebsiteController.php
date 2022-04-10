@@ -7,6 +7,17 @@ use Illuminate\Support\Facades\App;
 
 class WebsiteController extends Controller
 {
+    public function index()
+    {
+        logger(App::getLocale());
+        return view('welcome');
+    }
+
+    public function aboutUs()
+    {
+        return view('about-us');
+    }
+
     public function termsAndConditions()
     {
         logger(App::getLocale());
