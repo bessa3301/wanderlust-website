@@ -1,7 +1,7 @@
 <x-layout>
 
     <div>
-        terms and conditions
+        {{ App\Models\WebsiteInfo::where('key', 'TERMS')->first()->value }}
     </div>
 
 </x-layout>
