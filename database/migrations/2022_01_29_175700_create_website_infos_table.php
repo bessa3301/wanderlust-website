@@ -14,7 +14,7 @@ class CreateWebsiteInfosTable extends Migration
             $table->timestamps();
             $table->string('key');
             $table->text('value');
-            $table->enum('lang', [LangsEnum::BRAZILIAN_PORTUGUESE, LangsEnum::UNITED_STATES_ENGLISH]);
+            $table->enum('lang', LangsEnum::EXISTING_LANGUAGES);
             $table->unsignedBigInteger('page_id');
         });
     }
