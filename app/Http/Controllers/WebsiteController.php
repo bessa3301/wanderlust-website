@@ -26,4 +26,9 @@ class WebsiteController extends Controller
             'term' => $term->term,
         ]);
     }
+
+    public function getInvolved()
+    {
+        return view('get-involved');
+    }
 }
