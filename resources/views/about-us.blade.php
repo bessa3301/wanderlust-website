@@ -1,5 +1,10 @@
 <x-layout>
 
+    @livewire('title-and-video',[
+    'title' => 'texto exemplo acima do gif',
+    'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
+    ])
+
     @livewire('title-and-content', [
     'title' => 'ABOUT US',
     'content' =>
