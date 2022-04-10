@@ -21,16 +21,10 @@
     </div>
 
     <!-- video - section -->
-    <div class="relative">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZZ_4gzoDDAE?controls=0&autoplay=1"
-            title="YouTube video player" frameborder="0" disablekb="1"></iframe>
-
-        <div class="absolute bottom-3">
-            <h2 class="text-2xl p-6 font-extrabold text-white">
-                texto exemplo acima do video
-            </h2>
-        </div>
-    </div>
+    @livewire('title-and-video',[
+    'title' => 'texto exemplo acima do video',
+    'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
+    ])
 
     <!-- section - carrousel -->
     <div class="bg-wsorange-100 text-white">
