@@ -1,7 +1,7 @@
 <x-layout>
 
     <div>
-        {{ App\Models\WebsiteInfo::where('key', 'TERMS')->first()->value }}
+        {{ $term }}
     </div>
 
 </x-layout>
