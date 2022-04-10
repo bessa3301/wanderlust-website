@@ -12,6 +12,9 @@ Route::middleware('web')->group(function () {
     Route::get('/about-us', function () {
         return view('about-us');
     });
+    Route::get('/terms-and-conditions', function () {
+        return view('terms-and-conditions');
+    });
 });
 
 Route::get('/lang/{lang}', [LanguageController::class, 'switchLang']);
