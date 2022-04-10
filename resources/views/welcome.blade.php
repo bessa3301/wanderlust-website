@@ -97,11 +97,11 @@
     </section>
 
     <!-- Insta Reels section -->
-    <section class="my-4">
-        <div class="relative">
-            <img src="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder" alt="reel">
-            <span class="absolute bottom-0 left-0 text-2xl p-3"> {TEXTO PARA ACOMPANHAR REEL INSTAGRAM} </span>
-        </div>
+    <section class="my-12 space-y-12">
+        <x-reel-card mediaPath="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder"
+            message="TEXTO PARA ACOMPANHAR REEL INSTAGRAM" />
+        <x-reel-card mediaPath="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder"
+            message="TEXTO PARA ACOMPANHAR REEL INSTAGRAM" />
     </section>
 
 
