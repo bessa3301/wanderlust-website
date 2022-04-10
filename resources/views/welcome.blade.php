@@ -20,17 +20,11 @@
         </div>
     </div>
 
-    <!-- section -->
-    <div class="relative">
-        <img src="https://via.placeholder.com/1920x1080">
-
-        <!-- text -->
-        <div class="absolute bottom-10">
-            <h2 class="text-2xl p-6 font-extrabold">
-                voluptate quibusdam, quae cupiditate dolore ipsam.
-            </h2>
-        </div>
-    </div>
+    <!-- video - section -->
+    @livewire('title-and-video',[
+    'title' => 'texto exemplo acima do gif',
+    'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
+    ])
 
     <!-- section - carrousel -->
     <div class="bg-wsorange-100 text-white">

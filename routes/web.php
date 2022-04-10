@@ -9,6 +9,9 @@ Route::middleware('web')->group(function () {
         logger(App::getLocale());
         return view('welcome');
     });
+    Route::get('/about-us', function () {
+        return view('about-us');
+    });
 });
 
 Route::get('/lang/{lang}', [LanguageController::class, 'switchLang']);
