@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
+    @livewireStyles
     <title> Wanderlust </title>
 </head>
 
@@ -15,6 +16,7 @@
     <x-navbar />
     {{ $slot }}
     <x-footer />
+    @livewireScripts
 </body>
 
 </html>

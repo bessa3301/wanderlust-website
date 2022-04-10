@@ -1,23 +1,27 @@
-<div>
-    <footer class="flex flex-col">
-        <div>
-            <span> Address: { address } </span>
+<footer>
+    <div class="flex flex-col py-3 mx-3">
+        <div class="border-gray-300 border border-dotted rounded-lg">
+            <div class="flex justify-center items-center space-x-12 py-2">
+                <a target="_blank" href="https://www.instagram.com/iniciativawanderlust/">
+                    <img src="/assets/instagram.svg" alt="">
+                </a>
+
+                <a target="_blank" href="https://www.facebook.com/iniciativa.wanderlust/">
+                    <img src="/assets/facebook.svg" alt="">
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com/company/iniciativa-wanderlust/">
+                    <img src="/assets/linkedin.svg" alt="">
+                </a>
+            </div>
+            <hr>
+            <div class="flex items-center flex-col py-2">
+                <span> Address: { address } </span>
+                <span> Mon - Fri | 9am to 5pm BRT </span>
+                <span> {contact us} </span>
+                <span> CNPJ: {cnpj} </span>
+                <span> &copy 2022 - Wanderlust NGO </span>
+            </div>
         </div>
-        <div>
-            <span> Mon - Fri | 9am to 5pm BRT </span>
-            <span> {contact us} </span>
-        </div>
-        <div>
-            <span> CNPJ: {cnpj} </span>
-            <span> &copy 2022 - Wanderlust NGO </span>
-        </div>
-        <div>
-            <span> socials: </span>
-            <ul>
-                <li> insta </li>
-                <li> yt </li>
-                <li> etc </li>
-            </ul>
-        </div>
-    </footer>
-</div>
+    </div>
+</footer>
