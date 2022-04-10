@@ -20,14 +20,14 @@
         </div>
     </div>
 
-    <!-- section -->
+    <!-- video - section -->
     <div class="relative">
-        <img src="https://via.placeholder.com/1920x1080">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZZ_4gzoDDAE?controls=0&autoplay=1"
+            title="YouTube video player" frameborder="0" disablekb="1"></iframe>
 
-        <!-- text -->
-        <div class="absolute bottom-10">
-            <h2 class="text-2xl p-6 font-extrabold">
-                voluptate quibusdam, quae cupiditate dolore ipsam.
+        <div class="absolute bottom-3">
+            <h2 class="text-2xl p-6 font-extrabold text-white">
+                texto exemplo acima do video
             </h2>
         </div>
     </div>
