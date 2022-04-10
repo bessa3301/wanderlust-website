@@ -14,6 +14,7 @@
                     <img src="/assets/linkedin.svg" alt="">
                 </a>
             </div>
+            <hr>
             <div class="flex items-center flex-col py-2">
                 <span> Address: { address } </span>
                 <span> Mon - Fri | 9am to 5pm BRT </span>
