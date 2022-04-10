@@ -66,16 +66,27 @@
     </script>
 
     <!-- Leaders section -->
-    <section class="my-7">
+    <section class="my-7 mx-4">
 
         <div class="mx-auto pt-2 pb-4 flex justify-center">
-            <h1 class="text-2xl"> <b> {TITULO SECAO LIDERES} </b> </h1>
+            <h1 class="text-2xl"> <b> {TITULO SECAO FOUNDERS} </b> </h1>
         </div>
 
-        <figure class="p-3 rounded-lg shadow-lg shadow-slate-500">
+        <figure class="p-3 mb-8 rounded-lg shadow-lg shadow-slate-300 border-t border-gray-300">
             <div class="flex justify-around items-center">
                 <img class="rounded-full h-40 w-40" src="https://via.placeholder.com/300" alt="profile">
-                <span class="text-xl"> <b> {NOME LIDER} </b> </span>
+                <span class="text-xl"> <b> {NOME LIDER 1} </b> </span>
+            </div>
+            <p class="py-2 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque officiis ad
+                ullam? Tempora exercitationem placeat nemo saepe quis explicabo!
+            </p>
+        </figure>
+
+        <figure class="p-3 mb-8 rounded-lg shadow-lg shadow-slate-300 border-t border-gray-300">
+            <div class="flex justify-around items-center">
+                <span class="text-xl"> <b> {NOME LIDER 2} </b> </span>
+                <img class="rounded-full h-40 w-40" src="https://via.placeholder.com/300" alt="profile">
             </div>
             <p class="py-2 mx-auto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque officiis ad
