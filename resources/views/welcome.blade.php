@@ -96,4 +96,13 @@
 
     </section>
 
+    <!-- Insta Reels section -->
+    <section class="my-4">
+        <div class="relative">
+            <img src="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder" alt="reel">
+            <span class="absolute bottom-0 left-0 text-2xl p-3"> {TEXTO PARA ACOMPANHAR REEL INSTAGRAM} </span>
+        </div>
+    </section>
+
+
 </x-layout>
