@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div>
+    <div class="mx-auto p-3">
         {{ $term }}
     </div>
 
