@@ -5,22 +5,20 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWebsiteInfosTable extends Migration
+class CreateTermsAndConditionsTable extends Migration
 {
     public function up()
     {
-        Schema::create('website_infos', function (Blueprint $table) {
+        Schema::create('terms_and_conditions', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('key');
-            $table->text('value');
+            $table->text('term');
             $table->enum('lang', LangsEnum::EXISTING_LANGUAGES);
-            $table->unsignedBigInteger('page_id');
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('website_infos');
+        Schema::dropIfExists('terms_and_conditions');
     }
 }
