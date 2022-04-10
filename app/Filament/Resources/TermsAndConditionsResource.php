@@ -21,6 +21,12 @@ class TermsAndConditionsResource extends Resource
     protected static ?string $model = TermsAndConditions::class;
     protected static ?string $navigationIcon = 'heroicon-o-badge-check';
 
+    // User should not be able to create more entries apart from the seeder
+    public static function canCreate(): bool
+    {
+        return false;
+    }
+
     public static function form(Form $form): Form
     {
         return $form
