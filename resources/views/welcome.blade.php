@@ -65,4 +65,24 @@
         }).mount();
     </script>
 
+    <!-- Leaders section -->
+    <section class="my-7">
+
+        <div class="mx-auto pt-2 pb-4 flex justify-center">
+            <h1 class="text-2xl"> <b> {TITULO SECAO LIDERES} </b> </h1>
+        </div>
+
+        <figure class="p-3 rounded-lg shadow-lg shadow-slate-500">
+            <div class="flex justify-around items-center">
+                <img class="rounded-full h-40 w-40" src="https://via.placeholder.com/300" alt="profile">
+                <span class="text-xl"> <b> {NOME LIDER} </b> </span>
+            </div>
+            <p class="py-2 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque officiis ad
+                ullam? Tempora exercitationem placeat nemo saepe quis explicabo!
+            </p>
+        </figure>
+
+    </section>
+
 </x-layout>
