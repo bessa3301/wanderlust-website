@@ -2,7 +2,7 @@
 
 return [
     // gif and title
-    'title1' => 'GET INVOLVED ... text',
+    'title1' => 'SPANISH TITLE',
 
     'donate-button' => 'Donate Now!',
 

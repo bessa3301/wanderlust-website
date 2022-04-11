@@ -2,9 +2,9 @@
 
 return [
     // gif and title
-    'title1' => 'GET INVOLVED ... text',
+    'title1' => 'PORTUGUESE TITLE',
 
-    'donate-button' => 'Donate Now!',
+    'donate-button' => 'Doe agora',
 
     // section 1
     'title2' => 'More about getting involved',
