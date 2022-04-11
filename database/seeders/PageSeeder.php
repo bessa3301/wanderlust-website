@@ -12,6 +12,7 @@ class PageSeeder extends Seeder
         $pages = [
             ['page' => 'home'],
             ['page' => 'about-us'],
+            ['page' => 'terms-and-conditions'],
         ];
 
         foreach ($pages as $page) {

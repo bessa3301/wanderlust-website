@@ -7,24 +7,20 @@
         <!-- text -->
         <div class="absolute bottom-36">
             <h2 class="text-2xl p-2 text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Aliquam illum voluptatum velit.
+                {{ __('home.title1') }}
             </h2>
         </div>
 
         <!-- cta -->
         <div class="absolute bottom-10 left-1/3">
-            <a class="text-center bg-wsorange-100 text-wsblue-100 py-4 p-3 rounded-lg" href="">
-                APPLY NOW!
+            <a class="text-center bg-wsorange-100 text-wsblue-100 py-4 p-3 rounded-lg" href="/apply">
+                {{ __('home.apply') }}
             </a>
         </div>
     </div>
 
     <!-- video - section -->
-    @livewire('title-and-video',[
-    'title' => 'texto exemplo acima do gif',
-    'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
-    ])
+    <livewire:title-and-video title="{{ __('home.title2') }}" gifPath="https://giphy.com/embed/1L9AwWrIhDFbBX9AZl" />
 
     <!-- section - carrousel -->
     <div class="bg-wsorange-100 text-white">
@@ -63,28 +59,26 @@
     <section class="my-7 mx-4">
 
         <div class="mx-auto pt-2 pb-4 flex justify-center">
-            <h1 class="text-2xl"> <b> {TITULO SECAO FOUNDERS} </b> </h1>
+            <h1 class="text-2xl"> <b> {{ __('home.founders') }} </b> </h1>
         </div>
 
         <figure class="p-3 mb-8 rounded-lg shadow-lg shadow-slate-300 border-t border-gray-300">
             <div class="flex justify-around items-center">
                 <img class="rounded-full h-40 w-40" src="https://via.placeholder.com/300" alt="profile">
-                <span class="text-xl"> <b> {NOME LIDER 1} </b> </span>
+                <span class="text-xl"> <b> {{ __('home.lead-title-1') }} </b> </span>
             </div>
             <p class="py-2 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque officiis ad
-                ullam? Tempora exercitationem placeat nemo saepe quis explicabo!
+                {{ __('home.lead-text-1') }}
             </p>
         </figure>
 
         <figure class="p-3 mb-8 rounded-lg shadow-lg shadow-slate-300 border-t border-gray-300">
             <div class="flex justify-around items-center">
-                <span class="text-xl"> <b> {NOME LIDER 2} </b> </span>
+                <span class="text-xl"> <b> {{ __('home.lead-title-2') }} </b> </span>
                 <img class="rounded-full h-40 w-40" src="https://via.placeholder.com/300" alt="profile">
             </div>
             <p class="py-2 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque officiis ad
-                ullam? Tempora exercitationem placeat nemo saepe quis explicabo!
+                {{ __('home.lead-text-2') }}
             </p>
         </figure>
 
@@ -93,9 +87,9 @@
     <!-- Insta Reels section -->
     <section class="my-12 space-y-12">
         <x-reel-card mediaPath="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder"
-            message="TEXTO PARA ACOMPANHAR REEL INSTAGRAM" />
+            message="{{ __('home.reel2') }}" />
         <x-reel-card mediaPath="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder"
-            message="TEXTO PARA ACOMPANHAR REEL INSTAGRAM" />
+            message="{{ __('home.reel2') }}" />
     </section>
 
 

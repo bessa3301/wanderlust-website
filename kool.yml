@@ -10,6 +10,8 @@ scripts:
     - kool run artisan key:generate
     - kool run node-setup
 
+  migrate-fresh: kool run artisan migrate:fresh --seed
+
   reset:
     - kool run composer install
     - kool run artisan migrate:fresh --seed
