@@ -26,14 +26,16 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <x-carrousel-item-numbered number="Amazon"
-                            message="recusandae ducimus asperiores dicta impedit" />
+                        <x-carrousel-item-numbered number="{{ __('get-involved.cc-title1') }}"
+                            message="{{ __('get-involved.cc-item1') }}" />
                     </li>
                     <li class="splide__slide">
-                        <x-carrousel-item-numbered number="McKinkley" message="Qui nobis harum quia dolorem" />
+                        <x-carrousel-item-numbered number="{{ __('get-involved.cc-title2') }}"
+                            message="{{ __('get-involved.cc-item2') }}" />
                     </li>
                     <li class="splide__slide">
-                        <x-carrousel-item-numbered number="03" message="elit. Odio cupiditate neque" />
+                        <x-carrousel-item-numbered number="{{ __('get-involved.cc-title3') }}"
+                            message="{{ __('get-involved.cc-item3') }}" />
                     </li>
                 </ul>
             </div>
