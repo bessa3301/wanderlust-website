@@ -16,11 +16,10 @@
             </div>
             <hr>
             <div class="flex items-center flex-col py-2">
-                <span> Address: { address } </span>
-                <span> Mon - Fri | 9am to 5pm BRT </span>
-                <span> {contact us} </span>
-                <span> CNPJ: {cnpj} </span>
-                <span> &copy 2022 - Wanderlust NGO </span>
+                <span> {{ __('footer.address') }} </span>
+                <span> {{ __('footer.hours') }} </span>
+                <span> {{ __('footer.cnpj') }} </span>
+                <span> <small> &copy 2022 - Wanderlust </small> </span>
             </div>
         </div>
     </div>
