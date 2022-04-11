@@ -1,13 +1,11 @@
 <x-layout>
 
-    @livewire('title-and-video',[
-    'title' => 'GET INVOLVED ... text',
-    'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
-    ])
+    <livewire:title-and-video title="{{ __('get-involved.title1') }}"
+        gifPath='https://giphy.com/embed/1L9AwWrIhDFbBX9AZl' />
 
     <div class="m-4 flex justify-center items-center">
         <button class="p-4 rounded-md hover:bg-wsorange-100 transition bg-wsblue-100 text-white">
-            Donate Now!
+            {{ __('get-involved.donate-button') }}
         </button>
     </div>
 
