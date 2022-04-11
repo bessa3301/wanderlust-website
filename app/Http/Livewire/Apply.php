@@ -15,6 +15,7 @@ class Apply extends Component
 
     public function submitEmail()
     {
+        // needs some validation
         Newsletter::create(['email' => $this->email]);
         return redirect(config('app.google-form-url'));
     }
