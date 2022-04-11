@@ -13,4 +13,5 @@ Route::middleware('web')->group(function () {
     Route::get('/apply', [WebsiteController::class, 'apply']);
 });
 
+// Language switcher
 Route::get('/lang/{lang}', [LanguageController::class, 'switchLang']);
