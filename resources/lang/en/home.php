@@ -5,4 +5,8 @@ return [
     'apply' => 'APPLY NOW!',
 
     'title2' => 'text right on top of a gif',
+
+    // reels
+    'reel1' => 'Text for some instagram reel bg',
+    'reel2' => 'Text for some instagram reel bg',
 ];

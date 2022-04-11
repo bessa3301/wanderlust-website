@@ -89,9 +89,9 @@
     <!-- Insta Reels section -->
     <section class="my-12 space-y-12">
         <x-reel-card mediaPath="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder"
-            message="TEXTO PARA ACOMPANHAR REEL INSTAGRAM" />
+            message="{{ __('home.reel2') }}" />
         <x-reel-card mediaPath="https://via.placeholder.com/1080x1920.png?text=instagram+reel+placeholder"
-            message="TEXTO PARA ACOMPANHAR REEL INSTAGRAM" />
+            message="{{ __('home.reel2') }}" />
     </section>
 
 
