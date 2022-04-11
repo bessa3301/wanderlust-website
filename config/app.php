@@ -197,4 +197,5 @@ return [
 
     ],
 
+    'google-form-url' => env('GOOGLE_FORMS_URL', 'https://google.com'),
 ];
