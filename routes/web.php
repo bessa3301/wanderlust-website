@@ -10,6 +10,7 @@ Route::middleware('web')->group(function () {
     Route::get('/about-us', [WebsiteController::class, 'aboutUs']);
     Route::get('/terms-and-conditions', [WebsiteController::class, 'termsAndConditions']);
     Route::get('/get-involved', [WebsiteController::class, 'getInvolved']);
+    Route::get('/apply', [WebsiteController::class, 'apply']);
 });
 
 Route::get('/lang/{lang}', [LanguageController::class, 'switchLang']);

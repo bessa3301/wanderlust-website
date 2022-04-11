@@ -31,4 +31,9 @@ class WebsiteController extends Controller
     {
         return view('get-involved');
     }
+
+    public function apply()
+    {
+        return view('apply');
+    }
 }
