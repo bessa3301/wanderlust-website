@@ -1,3 +1,5 @@
 <x-layout>
-    apply
+    <div>
+        @livewire('apply')
+    </div>
 </x-layout>
