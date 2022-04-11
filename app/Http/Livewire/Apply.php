@@ -13,10 +13,19 @@ class Apply extends Component
         return view('livewire.apply');
     }
 
+    protected $rules = [
+        'email' => 'email|required'
+    ];
+
+    public function updated($property)
+    {
+        $this->validateOnly($property);
+    }
+
     public function submitEmail()
     {
-        // needs some validation
-        Newsletter::create(['email' => $this->email]);
+        $validated = $this->validate();
+        Newsletter::create($validated);
         return redirect(config('app.google-form-url'));
     }
 }
