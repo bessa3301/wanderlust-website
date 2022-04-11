@@ -1,26 +1,5 @@
 <x-layout>
-
-    @livewire('title-and-video',[
-    'title' => 'texto exemplo acima do gif',
-    'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
-    ])
-
-    @livewire('title-and-content', [
-    'title' => 'ABOUT US',
-    'content' =>
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique alias rem cum neque sapiente nesciunt!
-    Ipsum, cumque. Eveniet neque, consequatur quas earum praesentium quis minima numquam distinctio reprehenderit hic
-    cum tenetur rerum maxime, ratione vel tempore? Eaque similique nisi tenetur fuga excepturi, ullam, eos, omnis sed
-    amet deleniti exercitationem?'
-    ])
-
-    @livewire('title-and-content', [
-    'title' => 'Some more details',
-    'content' =>
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique alias rem cum neque sapiente nesciunt!
-    Ipsum, cumque. Eveniet neque, consequatur quas earum praesentium quis minima numquam distinctio reprehenderit hic
-    cum tenetur rerum maxime, ratione vel tempore? Eaque similique nisi tenetur fuga excepturi, ullam, eos, omnis sed
-    amet deleniti exercitationem?'
-    ])
-
+    <livewire:title-and-video title="{{ __('about-us.title') }}"
+        gifPath='https://giphy.com/embed/LZ2WRdQu8udNPSZxbg' />
+    <livewire:title-and-content title="{{ __('about-us.title1') }}" content="{{ __('about-us.content1') }}" />
 </x-layout>
