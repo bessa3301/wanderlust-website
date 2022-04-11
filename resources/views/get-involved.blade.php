@@ -9,9 +9,11 @@
         </button>
     </div>
 
-    <livewire:title-and-video title="{{ __('get-involved.title2') }}" content="{{ __('get-involved.content2') }}" />
+    <livewire:title-and-content title="{{ __('get-involved.title2') }}"
+        content="{{ __('get-involved.content2') }}" />
 
-    <livewire:title-and-video title="{{ __('get-involved.title3') }}" content="{{ __('get-involved.content3') }}" />
+    <livewire:title-and-content title="{{ __('get-involved.title3') }}"
+        content="{{ __('get-involved.content3') }}" />
 
 
     <!-- section - carrousel -->
