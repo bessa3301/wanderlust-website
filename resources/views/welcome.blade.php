@@ -7,24 +7,20 @@
         <!-- text -->
         <div class="absolute bottom-36">
             <h2 class="text-2xl p-2 text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Aliquam illum voluptatum velit.
+                {{ __('home.title1') }}
             </h2>
         </div>
 
         <!-- cta -->
         <div class="absolute bottom-10 left-1/3">
-            <a class="text-center bg-wsorange-100 text-wsblue-100 py-4 p-3 rounded-lg" href="">
-                APPLY NOW!
+            <a class="text-center bg-wsorange-100 text-wsblue-100 py-4 p-3 rounded-lg" href="/apply">
+                {{ __('home.apply') }}
             </a>
         </div>
     </div>
 
     <!-- video - section -->
-    @livewire('title-and-video',[
-    'title' => 'texto exemplo acima do gif',
-    'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
-    ])
+    <livewire:title-and-video title="{{ __('home.title2') }}" gifPath="https://giphy.com/embed/1L9AwWrIhDFbBX9AZl" />
 
     <!-- section - carrousel -->
     <div class="bg-wsorange-100 text-white">
