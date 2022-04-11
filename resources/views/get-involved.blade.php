@@ -5,6 +5,12 @@
     'gifPath' => 'https://giphy.com/embed/1L9AwWrIhDFbBX9AZl',
     ])
 
+    <div class="m-4 flex justify-center items-center">
+        <button class="p-4 rounded-md hover:bg-wsorange-100 transition bg-wsblue-100 text-white">
+            Donate Now!
+        </button>
+    </div>
+
     @livewire('title-and-content', [
     'title' => 'More about getting involved',
     'content' =>
@@ -31,10 +37,11 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <x-carrousel-item-numbered number="01" message="recusandae ducimus asperiores dicta impedit" />
+                        <x-carrousel-item-numbered number="Amazon"
+                            message="recusandae ducimus asperiores dicta impedit" />
                     </li>
                     <li class="splide__slide">
-                        <x-carrousel-item-numbered number="02" message="Qui nobis harum quia dolorem" />
+                        <x-carrousel-item-numbered number="McKinkley" message="Qui nobis harum quia dolorem" />
                     </li>
                     <li class="splide__slide">
                         <x-carrousel-item-numbered number="03" message="elit. Odio cupiditate neque" />
