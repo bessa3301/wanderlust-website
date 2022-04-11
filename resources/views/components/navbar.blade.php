@@ -14,6 +14,17 @@
     <template x-if="nav">
         <div class="flex justify-end">
             <ol class="flex flex-col bg-wsblue-100 text-white py-2 w-full text-lg">
+                <li class="p-2 border-b-2 border-white flex justify-around">
+                    <a class="w-full flex justify-center" href="/lang/en">
+                        🇺🇸
+                    </a>
+                    <a class="w-full flex justify-center" href="/lang/pt">
+                        🇧🇷
+                    </a>
+                    <a class="w-full flex justify-center" href="/lang/es">
+                        🇲🇽
+                    </a>
+                </li>
                 <li class="p-2 border-b-2 border-white">
                     <a class="w-full flex justify-end" href="/about-us">
                         about us
